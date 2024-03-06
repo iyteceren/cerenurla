@@ -1,0 +1,109 @@
+@import "../../app.scss";
+
+.header {
+
+    border-bottom: 1px solid #E5EBEF;
+    z-index: 100;
+
+    .navbar {
+        margin-left: 10px;
+
+        .navbar__helper {
+            display: flex;
+
+        }
+
+        .nav__menu {
+            color: $menu-color;
+            margin-left: 10px;
+        }
+
+        .nav__menu2 {
+            margin-left: -10px;
+
+            .nav__img {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+
+            .nav__img--icon {
+                border: 1px solid $menu-color;
+
+            }
+        }
+
+        .nav__menu--active {
+            color: $primary-color;
+            font-weight: 650;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 55px;
+                left: 0px;
+                height: 3px;
+                background-color: $primary-color;
+                width: 100%;
+
+            }
+        }
+
+        .nav__menu--btn {
+            @include display;
+            width: 74px;
+            height: 32px;
+            border: 1px solid $menu-color;
+            border-radius: 16px;
+        }
+    }
+
+
+}
+
+// RESPONSIVE DESIGN for Tablet
+@media only screen and (max-width : 992px) {
+    .header {
+        .navbar--modf {
+            margin-top: -20px;
+        }
+
+        .navbar {
+            margin-left: 0px;
+            
+            .nav__menu,
+            .nav__menu2 {
+                margin-top: 12px;
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
+
+            .nav__menu--active {
+                &::after {
+                    width: 00%;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE DESIGN for Mobile
+@media only screen and (max-width : 767px) {
+    .header {
+        .navbar {
+            .nav__menu {
+                margin-top: -2px;
+                font-size: 14px;
+            }
+
+            .nav__menu2 {
+                
+                margin-top: -2px;
+            }
+        }
+
+    }
+}

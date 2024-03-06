@@ -1,0 +1,251 @@
+@import '../../../app.scss';
+
+.RightSide {
+    flex: 3;
+
+    .rigtSide__head {
+        @include display;
+        justify-content: space-between;
+
+        .rigtSide__heading {
+            .rigtSide__header {
+                color: $head-color;
+                @include display;
+                justify-content: flex-start;
+                font-weight: bold;
+
+                span {
+                    margin-left: 20px;
+                }
+
+                .rigtSide__icon {
+                    color: #ffc833;
+                }
+            }
+
+            .rightSide__map {
+                color: $text-secondary-color;
+                @include display;
+                justify-content: flex-start;
+
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .rightSide__btn {
+            width: 203px;
+            @include button;
+        }
+    }
+
+    .rightSide__slider {
+        margin-top: 26px;
+
+        .rightSide__info {
+            font-size: 18px;
+            color: $text-color;
+            margin: 24px 0 56px 0;
+        }
+    }
+
+    .hr {
+        margin: 40px 0;
+        color: rgb(177, 177, 177);
+    }
+
+    .rightSide__hotelProperties {
+        margin-bottom: 100px;
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 1280px) {
+    .RightSide {
+        margin-left: -370px;
+        margin-top: 20px;
+
+        .rigtSide__head {
+
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 26px;
+                }
+
+                .rightSide__map {
+                    font-size: 16px;
+                }
+            }
+
+            .rightSide__btn {
+                width: 176px;
+                height: 56px;
+            }
+        }
+
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 1279px) and (min-width : 1024px) {
+    .RightSide {
+        margin-left: -310px;
+
+        .rightSide__slider {
+            margin-top: 16px;
+
+        }
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 992px) {
+    .RightSide {
+        margin-left: -33%;
+
+        .rigtSide__head {
+            .rigtSide__heading {
+                .rightSide__map {
+                    font-size: 1.2em;
+                }
+            }
+
+        }
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 767px) {
+    .RightSide {
+
+        .rigtSide__head {
+
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 14px;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+
+            .rightSide__btn {
+                @include button;
+                width: 103px;
+                height: 36px;
+                font-size: 10px;
+            }
+        }
+
+        .rightSide__slider {
+            margin-top: 16px;
+
+            .rightSide__info {
+                font-size: 12px;
+                margin: 16px 0 26px 0;
+            }
+        }
+    }
+}
+
+// Responsive Design for Surface DUO
+@media only screen and (max-width : 600px) and (min-width : 520px) {
+    .RightSide {
+        .rigtSide__head {
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 22px;
+                }
+
+                .rightSide__map {
+                    font-size: 14px;
+                }
+            }
+
+            .rightSide__btn {
+                width: 126px;
+                height: 42px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 414px) {
+    .RightSide {
+        .rigtSide__head {
+            .rigtSide__heading {
+                .rightSide__map {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design for Small Mobile
+@media only screen and (max-width : 389px) {
+    .RightSide {
+        .rigtSide__head {
+            .rigtSide__heading {
+                .rigtSide__header {
+                    font-size: 14px;
+                    display: block;
+
+                    span {
+                        display: block;
+                        margin-left: 0px;
+                    }
+                }
+
+                .rightSide__map {
+                    font-size: 10px;
+
+                }
+            }
+        }
+
+        .rightSide__slider {
+            margin-top: 8px;
+        }
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 280px) {
+    .RightSide {
+        margin-left: 5px;
+
+        .rigtSide__head {
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 12px;
+                    margin-top: -50px;
+                }
+
+            }
+
+            .rightSide__btn {
+                width: 96px;
+                height: 32px;
+                margin-top: -30px;
+                margin-left: -28px;
+            }
+        }
+
+        .rightSide__slider {
+        
+            .rightSide__info {
+                font-size: 10px;
+            }
+        }
+    }
+}

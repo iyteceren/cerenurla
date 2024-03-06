@@ -1,0 +1,32 @@
+$primary-color : #FF3200;
+$text-color : #343A46;
+$head-color : #343A40;
+$text-secondary-color : #868E96;
+$button-color : #0273DC;
+$button-secondary-color : #F0F7FD;
+$menu-color : #393E43;
+$advantage-btn-color : #097038;
+$advantage-btn-color2 : #E8F7E9;
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button {
+    cursor: pointer;
+    height: 56px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: $button-color;
+    font-weight: bold;
+}
+
+.App {
+    .loader {
+        @include display();
+        height: 80vh;
+    }
+}
